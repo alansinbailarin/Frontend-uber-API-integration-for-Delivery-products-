@@ -11,20 +11,29 @@
         <span>{{ $t("hero.updates") }}</span>
       </span>
       <div class="mt-8 md:mt-16">
-        <h1 class="text-6xl md:text-8xl font-semibold text-gray-900 mb-8">
-          {{ $t("hero.title") }}
-        </h1>
-        <h2 class="text-xl md:text-3xl text-gray-500">
-          {{ $t("hero.subtitle") }}
-        </h2>
+        <div>
+          <h1 class="text-6xl md:text-8xl font-semibold text-gray-800">
+            {{ $t("hero.title") }}
+            <span
+              class="bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-400 text-transparent bg-clip-text"
+              >{{ $t("hero.afterTitle") }}
+              <span class="text-7xl">✨</span></span
+            >
+          </h1>
+        </div>
+        <div class="mt-4 md:mt-8">
+          <h2 class="text-xl md:text-3xl text-gray-500">
+            {{ $t("hero.subtitle") }}
+          </h2>
+        </div>
       </div>
     </div>
     <div
-      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      class="absolute wave inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
       aria-hidden="true"
     >
       <div
-        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-700 to-pink-700 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
         style="
           clip-path: polygon(
             74.1% 44.1%,

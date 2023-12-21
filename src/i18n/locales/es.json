@@ -8,7 +8,8 @@
   },
   "hero": {
     "updates": "Checa las ultimas actualizaciones",
-    "title": "Envia o recibe paquetes de manera segura",
+    "title": "Envia o recibe paquetes de manera ",
+    "afterTitle": "segura",
     "subtitle": "Nuestro sistema de retención de fondos garantiza transacciones seguras hasta la confirmación de la recepción"
   }
 }
