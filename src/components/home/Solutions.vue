@@ -6,7 +6,7 @@
       </h1>
     </div>
     <div
-      class="w-full bg-gradient-to-r from-indigo-50 to-white bg-opacity-30 p-3 mt-8 rounded-3xl shadow-sm"
+      class="w-full bg-gradient-to-r from-indigo-100 to-indigo-50 bg-opacity-30 p-3 mt-8 rounded-3xl shadow-sm"
     >
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="w-full bg-white shadow-sm p-4 rounded-xl">
