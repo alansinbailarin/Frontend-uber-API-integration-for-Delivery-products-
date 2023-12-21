@@ -26,6 +26,13 @@
             {{ $t("hero.subtitle") }}
           </h2>
         </div>
+        <div class="mt-7 md:mt-8">
+          <RouterLink
+            :to="Tr.i18nRoute({ name: 'home' })"
+            class="bg-black text-white px-6 py-3 text-lg md:text-2xl rounded-md"
+            >{{ $t("hero.startNow") }}</RouterLink
+          >
+        </div>
       </div>
     </div>
     <div
@@ -59,4 +66,7 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterLink } from "vue-router";
+import Tr from "@/i18n/translation";
+</script>
