@@ -17,7 +17,7 @@
             <span
               class="bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-400 text-transparent bg-clip-text"
               >{{ $t("hero.afterTitle") }}
-              <span class="text-7xl">✨</span></span
+              <span class="text-5xl md:text-7xl">✨</span></span
             >
           </h1>
         </div>
