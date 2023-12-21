@@ -1,6 +1,11 @@
 <template>
   <section class="my-8">
-    <div class="text-center justify-center">
+    <div
+      class="text-center justify-center"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{ opacity: 1, y: 0 }"
+    >
       <span
         class="bg-white text-xs md:text-base rounded-full border border-gray-200 px-2 py-3"
       >

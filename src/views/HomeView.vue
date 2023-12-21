@@ -1,10 +1,6 @@
 <template>
   <main class="p-4 md:p-10 h-screen w-full">
-    <Hero
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visibleOnce="{ opacity: 1, y: 0 }"
-    />
+    <Hero />
   </main>
 </template>
 
