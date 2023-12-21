@@ -11,7 +11,7 @@
         <span>{{ $t("hero.updates") }}</span>
       </span>
       <div class="mt-8 md:mt-16">
-        <h1 class="text-6xl md:text-8xl font-semibold text-gray-800 mb-8">
+        <h1 class="text-6xl md:text-8xl font-semibold text-gray-900 mb-8">
           {{ $t("hero.title") }}
         </h1>
         <h2 class="text-xl md:text-3xl text-gray-500">

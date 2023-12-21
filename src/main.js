@@ -3,6 +3,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 import { createApp } from "vue/dist/vue.esm-bundler";
 import { createPinia } from "pinia";
+import { MotionPlugin } from "@vueuse/motion";
 
 import App from "./App.vue";
 import router from "./router";
@@ -13,4 +14,5 @@ const app = createApp(App);
 app.use(createPinia());
 app.use(router);
 app.use(i18n);
+app.use(MotionPlugin);
 app.mount("#app");
