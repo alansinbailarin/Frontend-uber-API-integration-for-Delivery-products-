@@ -1,0 +1,14 @@
+{
+  "locale": {
+    "es": "Spanish",
+    "en": "English"
+  },
+  "navbar": {
+    "home": "Home"
+  },
+  "hero": {
+    "updates": "Check the las updates",
+    "title": "Send or receive packages securely",
+    "subtitle": "Our funds retention system guarantees secure transactions until confirmation of receipt"
+  }
+}
