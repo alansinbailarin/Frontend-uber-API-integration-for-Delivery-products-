@@ -12,7 +12,7 @@
       </span>
       <div class="mt-8 md:mt-16">
         <div>
-          <h1 class="text-6xl md:text-8xl font-semibold text-gray-800">
+          <h1 class="text-6xl md:text-8xl font-semibold">
             {{ $t("hero.title") }}
             <span
               class="bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-400 text-transparent bg-clip-text"
@@ -29,7 +29,7 @@
         <div class="mt-7 md:mt-8">
           <RouterLink
             :to="Tr.i18nRoute({ name: 'home' })"
-            class="bg-black text-white px-6 py-3 text-lg md:text-2xl rounded-md"
+            class="bg-black text-white px-6 py-3 text-lg md:text-2xl rounded-md hover:bg-gray-800 transition-colors duration-300 ease-in-out"
             >{{ $t("hero.startNow") }}</RouterLink
           >
         </div>
