@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <div>
         <picture>
-          <img src="../assets/img/icon.png" alt="" class="md:w-14 w-12" />
+          <img src="../../img/icon.png" alt="" class="md:w-14 w-12" />
         </picture>
       </div>
       <div>
