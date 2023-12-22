@@ -79,6 +79,15 @@
               </li>
             </ul>
           </div>
+          <div class="bg-indigo-50 rounded-md">
+            <picture>
+              <img
+                src="../../../public/img/payments.png"
+                alt="Payments"
+                class="w-48 mx-auto mt-4"
+              />
+            </picture>
+          </div>
         </div>
         <div class="w-full bg-white shadow-sm p-4 rounded-xl">
           <div>
@@ -168,6 +177,15 @@
               </li>
             </ul>
           </div>
+          <div class="bg-indigo-50 rounded-md">
+            <picture>
+              <img
+                src="../../../public/img/identity.png"
+                alt="Identity"
+                class="w-48 mx-auto mt-4"
+              />
+            </picture>
+          </div>
         </div>
         <div class="w-full bg-white shadow-sm p-4 rounded-xl">
           <div>
@@ -241,6 +259,15 @@
                 <span>{{ $t("hero.tracking.list.notifications") }}</span>
               </li>
             </ul>
+          </div>
+          <div class="bg-indigo-50 rounded-md">
+            <picture>
+              <img
+                src="../../../public/img/tracking.png"
+                alt="Identity"
+                class="h-48 mx-auto mt-4"
+              />
+            </picture>
           </div>
         </div>
       </div>
