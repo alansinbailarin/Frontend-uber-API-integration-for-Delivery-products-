@@ -12,6 +12,36 @@
     "afterTitle": "securely",
     "subtitle": "Our funds retention system guarantees secure transactions until confirmation of receipt",
     "startNow": "Start now",
-    "solutionsTitle": "Our solutions"
+    "solutionsTitle": "Our solutions",
+    "payments": {
+      "title": "Secure payments",
+      "subtitle": "Protected transactions",
+      "description": "We protect your money until you receive your purchase, ensuring secure and protected transactions for buyers and sellers",
+      "list": {
+        "saveMoney": "Your money is safe until you receive your purchase",
+        "eliminatesFraud": "Elimination of possibilities of fraud in your transactions",
+        "securePayments": "Secure payments for buyers and sellers"
+      }
+    },
+    "identityVerification": {
+      "title": "Identity Verification",
+      "subtitle": "Verified user identities",
+      "description": "We verify user identities to ensure the authenticity of transactions, providing secure and fast transactions while protecting user privacy",
+      "list": {
+        "verifyIdentity": "Ensuring the authenticity of users",
+        "secureTransactions": "We provide safe, fast and protected transactions daily",
+        "protectsPrivacy": "Protecting the privacy of your information"
+      }
+    },
+    "tracking": {
+      "title": "Real-Time Tracking",
+      "subtitle": "Comprehensive transaction monitoring",
+      "description": "Stay informed with the exact location of your items at all times through real-time notifications, supported by photos and unique codes for visual proof",
+      "list": {
+        "trackPackages": "Know the exact location of your items at all times",
+        "realTime": "Real-time notifications for each stage of the process",
+        "notifications": "Photos and unique codes provide visual evidence"
+      }
+    }
   }
 }

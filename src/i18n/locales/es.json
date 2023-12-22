@@ -12,6 +12,36 @@
     "afterTitle": "segura",
     "subtitle": "Nuestro sistema de retención de fondos garantiza transacciones seguras hasta la confirmación de la recepción",
     "startNow": "Comenzar ahora",
-    "solutionsTitle": "Nuestras soluciones"
+    "solutionsTitle": "Nuestras soluciones",
+    "payments": {
+      "title": "Pagos seguros",
+      "subtitle": "Transacciones protegidas",
+      "description": "Protegemos tu dinero hasta que recibas tu compra, asegurando transacciones seguras y protegidas para compradores y vendedores",
+      "list": {
+        "saveMoney": "Tu dinero está seguro hasta que recibas tu compra",
+        "eliminatesFraud": "Eliminación de posibilidades de fraude en tus transacciones",
+        "securePayments": "Pagos seguros para compradores y vendedores"
+      }
+    },
+    "identityVerification": {
+      "title": "Verificación de identidad",
+      "subtitle": "Identidades verificadas de usuarios",
+      "description": "Verificamos las identidades de los usuarios para garantizar la autenticidad de las transacciones, proporcionando transacciones seguras y rápidas",
+      "list": {
+        "verifyIdentity": "Garantizando la autenticidad de los usuarios",
+        "secureTransactions": "Brindamos transacciones seguras, rápidas y protegidas a diario",
+        "protectsPrivacy": "Protegiendo la privacidad de tu información"
+      }
+    },
+    "tracking": {
+      "title": "Seguimiento en tiempo real",
+      "subtitle": "Monitoreo integral de transacciones",
+      "description": "Mantente informado con la ubicación exacta de tus artículos en todo momento a través de notificaciones en tiempo real, respaldadas por fotos y códigos únicos",
+      "list": {
+        "trackPackages": "Conoce la ubicación exacta de tus artículos en todo momento",
+        "realTime": "Notificaciones en tiempo real para cada etapa del proceso",
+        "notifications": "Fotos y códigos únicos proporcionan pruebas visuales del envío"
+      }
+    }
   }
 }
