@@ -167,6 +167,14 @@
           </svg>
           Save information
         </button>
+        <Transition>
+          <span
+            v-show="savedMessage"
+            class="text-sm text-gray-500 ml-2"
+            key="savedMessage"
+            >{{ savedMessage }}</span
+          >
+        </Transition>
       </div>
     </form>
   </div>
@@ -181,6 +189,7 @@ const selectedType = ref("sender");
 const buttonLoading = ref(false);
 const parcelParticipantsId = ref(0);
 const errors = ref(null);
+const savedMessage = ref("");
 
 const authUserInfo = computed(() => {
   return authUser.authUser;
@@ -272,11 +281,14 @@ const saveParcel = async () => {
         form.value
       );
 
+      savedMessage.value = "Updated";
+
       console.log(response);
     } else {
       const response = await QuoteService.createShipment(form.value);
 
       parcelParticipantsId.value = response.data.data.id;
+      savedMessage.value = "Saved";
 
       window.localStorage.setItem(
         "parcelParticipantsId",
@@ -293,7 +305,21 @@ const saveParcel = async () => {
   } finally {
     buttonLoading.value = false;
   }
+
+  setTimeout(() => {
+    savedMessage.value = "";
+  }, 3000);
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
