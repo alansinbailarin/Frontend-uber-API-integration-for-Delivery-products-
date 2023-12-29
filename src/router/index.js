@@ -68,8 +68,6 @@ router.beforeEach(async (to) => {
   const authRequired = !publicPages.includes(to.name);
   const auth = useAuthStore();
 
-  console.log(to);
-
   if (authRequired && !auth.user) {
     auth.returnUrl = to.fullPath; // Usar fullPath en lugar de name
     return { name: "login", params: { locale: to.params.locale } };

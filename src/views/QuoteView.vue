@@ -38,6 +38,4 @@ onMounted(() => {
       loading.value = false;
     });
 });
-
-console.log(quote);
 </script>
