@@ -28,7 +28,7 @@
         </div>
         <div class="mt-7 md:mt-8">
           <RouterLink
-            :to="Tr.i18nRoute({ name: 'home' })"
+            :to="Tr.i18nRoute({ name: 'shipment' })"
             class="bg-black text-white px-6 py-3 text-lg md:text-2xl rounded-md hover:bg-gray-800 transition-colors duration-300 ease-in-out"
             >{{ $t("hero.startNow") }}</RouterLink
           >

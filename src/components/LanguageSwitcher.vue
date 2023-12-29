@@ -9,10 +9,7 @@
       <span class="ml-2">{{ currentLocale }}</span>
     </button>
     <Transition :duration="550" name="nested">
-      <div
-        v-show="isOpen"
-        class="absolute z-50 mt-2 bg-white rounded-lg shadow-lg border border-gray-200"
-      >
+      <Dropdown v-show="isOpen">
         <ul>
           <li v-for="sLocale in supportedLocales" :key="sLocale">
             <button
@@ -27,7 +24,7 @@
             </button>
           </li>
         </ul>
-      </div>
+      </Dropdown>
     </Transition>
   </div>
 </template>
@@ -37,6 +34,7 @@ import { useI18n } from "vue-i18n";
 import { ref, computed } from "vue";
 import Tr from "@/i18n/translation";
 import { useRouter } from "vue-router";
+import Dropdown from "./Dropdown.vue";
 
 const { t, locale } = useI18n();
 const supportedLocales = Tr.supportedLocales;

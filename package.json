@@ -11,9 +11,15 @@
   "dependencies": {
     "@intlify/unplugin-vue-i18n": "^2.0.0",
     "@vueuse/motion": "^2.0.0",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
     "flag-icons": "^7.1.0",
     "flowbite": "^2.2.1",
+    "ldrs": "^1.0.1",
+    "mapbox-gl": "^3.0.1",
+    "moment": "^2.29.4",
     "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "^3.3.11",
     "vue-i18n": "^9.8.0",
     "vue-router": "^4.2.5"

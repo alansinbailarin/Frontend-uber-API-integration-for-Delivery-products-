@@ -20,7 +20,7 @@
       "list": {
         "saveMoney": "Tu dinero está seguro hasta que recibas tu compra",
         "eliminatesFraud": "Eliminación de posibilidades de fraude en tus transacciones",
-        "securePayments": "Pagos seguros para compradores y vendedores"
+        "securePayments": "Pagos confiables y seguros para compradores y vendedores"
       }
     },
     "identityVerification": {
@@ -30,7 +30,7 @@
       "list": {
         "verifyIdentity": "Garantizando la autenticidad de los usuarios",
         "secureTransactions": "Brindamos transacciones seguras, rápidas y protegidas a diario",
-        "protectsPrivacy": "Protegiendo la privacidad de tu información"
+        "protectsPrivacy": "Protegiendo la privacidad de tu información siempre"
       }
     },
     "tracking": {
@@ -38,7 +38,7 @@
       "subtitle": "Monitoreo integral de transacciones",
       "description": "Mantente informado con la ubicación exacta de tus artículos en todo momento a través de notificaciones en tiempo real, respaldadas por fotos y códigos únicos",
       "list": {
-        "trackPackages": "Conoce la ubicación exacta de tus artículos en todo momento",
+        "trackPackages": "Conoce la ubicación exacta de tus artículos",
         "realTime": "Notificaciones en tiempo real para cada etapa del proceso",
         "notifications": "Fotos y códigos únicos proporcionan pruebas visuales del envío"
       }

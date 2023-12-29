@@ -15,9 +15,10 @@
           </li>
         </ul>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2">
         <LanguageSwitcher />
-        <Auth />
+        <Auth v-if="authStore.user" :authUser="authStore.user" />
+        <NoAuth v-else />
       </div>
     </div>
   </nav>
@@ -25,6 +26,10 @@
 <script setup>
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import Auth from "@/components/nav/Auth.vue";
+import NoAuth from "@/components/nav/NoAuth.vue";
 import Tr from "@/i18n/translation";
 import { RouterLink } from "vue-router";
+import { useAuthStore } from "@/stores/auth";
+
+const authStore = useAuthStore();
 </script>
