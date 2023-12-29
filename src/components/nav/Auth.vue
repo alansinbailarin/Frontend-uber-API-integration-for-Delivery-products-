@@ -10,10 +10,11 @@
       </picture>
       <span
         @click="toggleDropdown"
-        class="bg-gray-100 cursor-pointer w-12 h-12 p-3 rounded-full font-medium text-gray-500 text-lg"
+        class="bg-gray-100 cursor-pointer w-12 h-12 rounded-full font-medium text-center text-gray-500 flex items-center justify-center text-xl"
         v-else
-        >{{ initials.getInitials(authUser.name, authUser.last_name) }}</span
       >
+        {{ initials.getInitials(authUser.name, authUser.last_name) }}
+      </span>
     </div>
     <Transition :duration="550" name="nested">
       <Dropdown v-show="isOpen" class="right-4 md:right-10 px-3 py-2 divide-y">
