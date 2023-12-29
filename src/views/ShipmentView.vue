@@ -11,9 +11,11 @@
           <li class="mb-3">
             <StepButton
               @click="toggleTabs(1)"
-              class="bg-gray-50 border-2 border-gray-200 text-gray-700"
+              class=""
               :class="{
-                'border border-blue-500 text-blue-500 ': openTab === 1,
+                'border-2 border-blue-500 text-blue-500 ': openTab === 1,
+                'bg-gray-50 border-2 border-gray-200 text-gray-700':
+                  openTab !== 1,
               }"
               :title="'Package user information'"
               :subtitle="'Enter the information of the person who will receive or send the package'"
@@ -22,9 +24,11 @@
           <li>
             <StepButton
               @click="toggleTabs(2)"
-              class="bg-gray-50 border-2 border-gray-200 text-gray-700"
+              class=""
               :class="{
-                'border border-blue-500 text-blue-500 ': openTab === 2,
+                'border-2 border-blue-500 text-blue-500 ': openTab === 2,
+                'bg-gray-50 border-2 border-gray-200 text-gray-700':
+                  openTab !== 2,
               }"
               :title="'Documents information'"
               :subtitle="'Enter the documentation necessary to send the package'"
