@@ -61,8 +61,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-console.log(props.authUser);
 </script>
 <style scoped>
 .outer,

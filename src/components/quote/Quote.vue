@@ -34,6 +34,4 @@ const props = defineProps({
     required: true,
   },
 });
-
-console.log(props.loading);
 </script>

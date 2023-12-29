@@ -16,15 +16,26 @@ const headers = {
   "Content-Type": "application/json",
 };
 
-if (authData && authData.authToken) {
-  headers.Authorization = `Bearer ${authData.authToken}`;
-}
+// if (authData && authData.authToken) {
+//   headers.Authorization = `Bearer ${authData.authToken}`;
+// }
 
 const apiClient = axios.create({
   baseURL: api_url,
   method: "GET",
   withCredentials: false,
   headers,
+});
+
+apiClient.interceptors.request.use((config) => {
+  const authDataString = window.localStorage.getItem("auth");
+  const authData = authDataString ? JSON.parse(authDataString) : null;
+
+  if (authData && authData.authToken) {
+    config.headers.Authorization = `Bearer ${authData.authToken}`;
+  }
+
+  return config;
 });
 
 export default {

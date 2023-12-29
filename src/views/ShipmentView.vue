@@ -46,7 +46,7 @@
   </div>
 </template>
 <script setup>
-import { ref, defineAsyncComponent, watch } from "vue";
+import { ref, defineAsyncComponent, watch, onMounted } from "vue";
 import { useAuthStore } from "@/stores/auth";
 
 const props = defineProps({
