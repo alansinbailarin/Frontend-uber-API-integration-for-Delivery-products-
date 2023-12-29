@@ -2,7 +2,7 @@ import axios from "axios";
 
 let api_url = "";
 const authDataString = window.localStorage.getItem("auth");
-const authData = JSON.parse(authDataString);
+const authData = authDataString ? JSON.parse(authDataString) : null;
 
 if (import.meta.env.VITE_APP_ENV === "local") {
   api_url = import.meta.env.VITE_API_URL_DEV;
@@ -10,19 +10,22 @@ if (import.meta.env.VITE_APP_ENV === "local") {
   api_url = import.meta.env.VITE_API_URL_PROD;
 }
 
+const headers = {
+  Accept: "application/json",
+  "Access-Control-Allow-Origin": "*",
+  "Content-Type": "application/json",
+};
+
+if (authData && authData.authToken) {
+  headers.Authorization = `Bearer ${authData.authToken}`;
+}
+
 const apiClient = axios.create({
   baseURL: api_url,
   method: "GET",
-  withCreadentials: false,
-  headers: {
-    Accept: "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${authData.authToken}`,
-  },
+  withCredentials: false,
+  headers,
 });
-
-console.log(apiClient);
 
 export default {
   getQuote(customer_uuid, access_token) {
