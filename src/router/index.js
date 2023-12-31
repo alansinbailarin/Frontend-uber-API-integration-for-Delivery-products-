@@ -7,6 +7,7 @@ import ShipmentView from "@/views/ShipmentView.vue";
 import Login from "@/views/Login.vue";
 import Register from "@/views/Register.vue";
 import Trans from "@/i18n/translation";
+import TransactionView from "@/views/TransactionView.vue";
 import { useAuthStore } from "@/stores/auth";
 
 const router = createRouter({
@@ -53,7 +54,13 @@ const router = createRouter({
           props: true,
         },
         {
-          path: "/:locale?/shipment",
+          path: "/:locale?/transaction/new",
+          name: "transaction",
+          component: TransactionView,
+          props: true,
+        },
+        {
+          path: "/:locale?/shipment/:transaction_code",
           name: "shipment",
           component: ShipmentView,
           props: true,

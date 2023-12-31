@@ -50,4 +50,8 @@ export default {
   updateShipment(id, form) {
     return apiClient.put(`api/shipment/update/${id}`, form);
   },
+
+  getTransactions(uuid) {
+    return apiClient.get(`api/transactions/${uuid}`);
+  },
 };
