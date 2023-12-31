@@ -21,7 +21,7 @@
         </form>
       </div>
       <div class="mt-6">
-        <h1 class="font-medium text-gray-800">
+        <h1 v-if="transactions.length > 0" class="font-medium text-gray-800">
           Open transactions:
           <template v-for="(transaction, index) in transactions">
             <RouterLink
