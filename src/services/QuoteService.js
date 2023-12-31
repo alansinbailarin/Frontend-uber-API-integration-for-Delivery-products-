@@ -16,10 +16,6 @@ const headers = {
   "Content-Type": "application/json",
 };
 
-// if (authData && authData.authToken) {
-//   headers.Authorization = `Bearer ${authData.authToken}`;
-// }
-
 const apiClient = axios.create({
   baseURL: api_url,
   method: "GET",
@@ -53,5 +49,9 @@ export default {
 
   getTransactions(uuid) {
     return apiClient.get(`api/transactions/${uuid}`);
+  },
+
+  createTransaction(form) {
+    return apiClient.post("api/transaction/create", form);
   },
 };

@@ -12,16 +12,34 @@
         occurs problem, solve it in minutes
       </p>
       <div class="mt-6">
-        <form autoclomplete="off">
-          <label class="text-gray-800 font-medium" for="title"
+        <form autoclomplete="off" @submit.prevent="createTransaction()">
+          <label class="text-gray-800 font-medium text-lg" for="title"
             >Give a title</label
           >
-          <InputText placeholder="Buy a barbie" id="title" />
-          <Button class="">Start creating your transaction</Button>
+          <input
+            v-model="form.title"
+            placeholder="Buy a barbie"
+            id="title"
+            type="text"
+            class="bg-gray-50 w-full mt-1 placeholder:text-gray-300 focus:border-indigo-300 rounded-md px-3 py-2 text-gray-800 border border-gray-200"
+          />
+          <Button
+            :type="'submit'"
+            :class="{
+              'bg-indigo-200 hover:bg-indigo-200 cursor-not-allowed':
+                !validateForm(),
+            }"
+            :disabled="!validateForm()"
+          >
+            Start creating your transaction
+          </Button>
         </form>
       </div>
       <div class="mt-6">
-        <h1 v-if="transactions.length > 0" class="font-medium text-gray-800">
+        <h1
+          v-if="transactions.length > 0"
+          class="font-medium text-lg text-gray-800 flex-wrap flex"
+        >
           Open transactions:
           <template v-for="(transaction, index) in transactions">
             <RouterLink
@@ -46,7 +64,7 @@ import { useAuthStore } from "@/stores/auth";
 import { ref, onMounted, defineAsyncComponent } from "vue";
 import QuoteService from "@/services/QuoteService";
 import Tr from "@/i18n/translation";
-import { RouterLink } from "vue-router";
+import { RouterLink, useRouter } from "vue-router";
 
 const InputText = defineAsyncComponent(() =>
   import("@/components/InputText.vue")
@@ -59,6 +77,19 @@ const userUuid = authUser.authUser.uuid;
 const transactions = ref([]);
 const loading = ref(false);
 
+const form = ref({
+  title: "",
+  user_id: authUser.authUser.id,
+});
+
+console.log(authUser.authUser.id);
+
+const validateForm = () => {
+  return form.value.title.length > 0;
+};
+
+console.log(form.value.title.length);
+
 onMounted(async () => {
   loading.value = true;
   try {
@@ -70,4 +101,17 @@ onMounted(async () => {
     loading.value = false;
   }
 });
+
+const createTransaction = async () => {
+  loading.value = true;
+  try {
+    const response = await QuoteService.createTransaction(form.value);
+    transactions.value.push(response.data.data);
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    loading.value = false;
+  }
+};
 </script>
